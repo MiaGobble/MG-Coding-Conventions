@@ -1,0 +1,22 @@
+# Typechecking
+Typecheck a reasonable amount; nobody should guess if "Value" is a number, string, or table. Overtyping is still annoying.
+
+Bad example:
+
+```lua
+for _, Value in Array do
+    --...
+end
+```
+
+Good example:
+
+```lua
+for _, Value : number in Array do
+    --...
+end
+```
+
+Types should be exported from modules when they represent data that is usable from outside the module.
+
+Additionally, making modules exclusively for storing types is recommended when creating complex libraries or systems.
