@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[298],{4410:s=>{s.exports=JSON.parse('{"sourceUrl":"https://github.com/MiaGobble/MG-Coding-Conventions/blob/master","baseUrl":"/MG-Coding-Conventions/","classOrder":[],"apiCategories":[]}')}}]);
