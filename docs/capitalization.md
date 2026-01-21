@@ -5,7 +5,7 @@ There are four main types of capitalization:
 * *Pascal case* (`PascalCase`), which makes every word start with a capital letter
 * *Camel case* (`camelCase`), which makes every word start with a capital letter, except the first word
 * *Upper case* (`UPPER_CASE`), which makes every letter capitalized, with words separated by underscores
-* *Snake case* (`snakecase`), which makes every letter lowercase
+* *Snake case* (`snake_case`), which makes every letter lowercase
 
 In the MG Coding Conventions, *pascal case* is the default for every userdata except the declared exceptions below. *Snake case* is never used. The reason it's best to opt for *pascal case* is because a majority of the Roblox API uses that casing, and so having userdata to match a similar style is easier to read.
 
@@ -35,5 +35,27 @@ end
 ## Configuration
 Configuration refers to tables or other userdata that act like constants shared across a project. Indexes in these config files are still in *pascal case*.
 
+```lua
+local SETTINGS = {
+    Setting0 = "",
+    Setting1 = "",
+    --...
+}
+```
+
 ## Keys and actions
 A key or action would refer to something like a string sent to a function that changes behavior. In a case like this, all keys are still *pascal case*.
+
+For example:
+
+```lua
+local function DoAction(ActionType : string)
+    if ActionType == "Foo" then
+        -- ...
+    elseif ActionType == "Bar" then
+        -- ...
+    end
+end
+
+DoAction("Foo")
+```

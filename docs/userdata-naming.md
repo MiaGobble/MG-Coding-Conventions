@@ -13,7 +13,7 @@ Bear in mind the following rules when deciding a name for any variables:
     * And etc...
 * If the not keyword is used to negate a variable more often than not and scales that way, consider renaming the variable to the inverse.
 * Variables should be descriptive and verbose enough to describe a purpose and state.
-* Do not reuse variable names in shared scopes.
+* Do not reuse variable names in shared scopes (or in other words, don't shadow variable names).
 
 Bad example:
 
