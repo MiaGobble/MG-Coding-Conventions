@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[530],{4410:o=>{o.exports=JSON.parse('{"sourceUrl":"https://github.com/MiaGobble/Oxomo-Coding-Conventions/blob/master","baseUrl":"/Oxomo-Coding-Conventions/","classOrder":[],"apiCategories":[]}')}}]);
