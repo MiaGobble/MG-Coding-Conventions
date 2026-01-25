@@ -14,6 +14,12 @@ When possible, your code must have data organized in this order:
 * Class functions (when applicable)
 * Class object methods (when applicable)
 
+:::info
+
+Juxtaposition is extremely important for consistency and readability, since it allows developers to quickly glance at a part of the code they assume will have the information they need.
+
+:::
+
 Types, constants, services, imports, types extended, constants extended, and variables all are separated into sections by whitespace and have a comment of each section saying what it is. "Extended" sections only should exist if they need something from imports or something else.
 
 Below is an example script showing proper juxtaposition and comments:

@@ -49,7 +49,11 @@ local Player = PlayersService.LocalPlayer
 local PlayerGui = Player.PlayerGui
 ```
 
+:::warning 
+
 The number one counter-argument to keeping consistent styling and good naming is "already knowing what everything does". That does not cut it. Whether you are working by yourself or with others, at some point in the future the code will need to be iterated upon, and in order to do so there should not be time wasted asking "what does everything do?”
+
+:::
 
 ## Functions
 Like variables, functions need solid names as well. Bear the following in mind:

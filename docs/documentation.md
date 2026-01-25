@@ -1,7 +1,7 @@
 # Documentation
-All documentation in a codebase should be in Moonwave format, which is readable and able to be auto-compiled to a generated documenation website.
+All documentation in a codebase should be in Moonwave format, which is very readable and able to be auto-compiled to a generated documenation website.
 
-Moonwave for generating doc websites is a separate tool, which you can find here: https://eryn.io/moonwave/. This page covers the documentation format, not the page generator.
+Moonwave as a tool for generating doc websites is separate from your codebase; you can learn about it here: https://eryn.io/moonwave/. This page covers the documentation format, not the page generation tool.
 
 Documentation should be written in Moonwave format for the following:
 * High-level modules (ones that are used across the game, not a random sub-module)

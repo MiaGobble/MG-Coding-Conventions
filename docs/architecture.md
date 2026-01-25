@@ -1,7 +1,13 @@
 # Architecture
 Everything works best when using a multi-script architecture. This means there is no centralized framework, and instead code is just modularized and loaded normally. Multiple scripts are allowed on the client and server (just don't be excessive), but they must be in their respective structure folders.
 
-All script, asset, config, and other file names are in *pacal case* (`PascalCase`) capitalization
+All script, asset, config, and other file names are in *pacal case* (`PascalCase`) capitalization.
+
+:::info
+
+Avoiding a central framework allows for easy onboarding and non-strict development, which decreases hiring costs. Central frameworks tend to overcomplicate codebases, often leading to memory, typechecking, and design problems.
+
+:::
 
 ## File Structure
 Here is the recommended file structure:

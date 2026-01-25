@@ -9,6 +9,12 @@ There are four main types of capitalization:
 
 In the Oxomo Coding Conventions, *pascal case* is the default for every userdata except the declared exceptions below. *Snake case* is never used. The reason it's best to opt for *pascal case* is because a majority of the Roblox API uses that casing, and so having userdata to match a similar style is easier to read.
 
+:::warning
+
+Be sure to read the exceptions below for cases that don't use *pascal case*.
+
+:::
+
 ## Constants
 Constants, which are variables that are declared once at the top of the script and never change, are always *upper case*. In this case, only do this casing if the variable is in the root part of the script towards the top, not if it's in another function.
 

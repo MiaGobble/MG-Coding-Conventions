@@ -9,4 +9,4 @@ Modules, classes, etc are all to be declared and mutated in an unsealed table.
 ## Writing and Reading Tables
 Use plain `key` syntax for writing dictionaries when possible, but if there are any entries that cannot follow that, then use `["key"]` syntax. 
 
-Use dot (table.value) notation for accessing values in a dictionary table when possible (as opposed to something like table["value"]).
+Use dot (`table.value`) notation for accessing values in a dictionary table when possible (as opposed to something like `table["value"]`).
