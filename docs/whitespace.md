@@ -16,6 +16,8 @@ do
 end
 ```
 
+Do not use unneeded indentation, and maintain indentation so that it matches the scope in best possible way.
+
 ## Line breaks
 Separate different sections of userdata and more with line breaks, as shown in [juxtaposition](./juxtaposition.md).
 

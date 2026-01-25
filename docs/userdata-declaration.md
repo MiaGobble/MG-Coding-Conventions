@@ -4,19 +4,19 @@ Always use the `local` keyword within any scope, including the top one. Function
 When defining functions, put `function` before the name, not after.
 
 ```lua
-foo = 5 -- Bad
+Foo = 5 -- Bad
 
-local foo = 5 -- Good
+local Foo = 5 -- Good
 
-function bar() -- Bad
-
-end
-
-local bar = function() -- Bad
+function Bar() -- Bad
 
 end
 
-local function bar() -- Good
+local Bar = function() -- Bad
+
+end
+
+local function Bar() -- Good
 
 end
 ```

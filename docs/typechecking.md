@@ -4,7 +4,7 @@ Typecheck a reasonable amount; nobody should guess if "Value" is a number, strin
 Bad example:
 
 ```lua
-for _, Value in Array do
+for _, value in Array do
     --...
 end
 ```
@@ -12,7 +12,7 @@ end
 Good example:
 
 ```lua
-for _, Value : number in Array do
+for _, value : number in Array do
     --...
 end
 ```

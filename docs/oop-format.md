@@ -5,11 +5,11 @@ Follow this format for writing OOP code:
 local Object = {}
 Object.__index = Object
 
-function Object.new(Foo : number, Bar : string)
+function Object.new(foo : number, bar : string)
     local self = setmetatable({}, Object) -- UNSEALED TABLE!!!
 
-    self.Foo = Foo
-    self.Bar = Bar
+    self.Foo = foo
+    self.Bar = bar
 
     self:Init()
 

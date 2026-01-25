@@ -7,7 +7,7 @@ There are four main types of capitalization:
 * *Upper case* (`UPPER_CASE`), which makes every letter capitalized, with words separated by underscores
 * *Snake case* (`snake_case`), which makes every letter lowercase
 
-In the MG Coding Conventions, *pascal case* is the default for every userdata except the declared exceptions below. *Snake case* is never used. The reason it's best to opt for *pascal case* is because a majority of the Roblox API uses that casing, and so having userdata to match a similar style is easier to read.
+In the Oxomo Coding Conventions, *pascal case* is the default for every userdata except the declared exceptions below. *Snake case* is never used. The reason it's best to opt for *pascal case* is because a majority of the Roblox API uses that casing, and so having userdata to match a similar style is easier to read.
 
 ## Constants
 Constants, which are variables that are declared once at the top of the script and never change, are always *upper case*. In this case, only do this casing if the variable is in the root part of the script towards the top, not if it's in another function.
@@ -20,7 +20,7 @@ MyVariable = 20
 ```
 
 ## Arguments and parameters
-Arguments and parameters should be in *camel case*. Below are two examples of this.
+Arguments and parameters should be in *camel case*. Arguments are parameters are declared as variables that are passed by something into a more specific scope. Below are two examples of this.
 
 Example in `for` loop:
 
@@ -69,10 +69,10 @@ A key or action would refer to something like a string sent to a function that c
 For example:
 
 ```lua
-local function DoAction(ActionType : string)
-    if ActionType == "Foo" then
+local function DoAction(actionType : string)
+    if actionType == "Foo" then
         -- ...
-    elseif ActionType == "Bar" then
+    elseif actionType == "Bar" then
         -- ...
     end
 end

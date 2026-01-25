@@ -28,10 +28,10 @@ Also when writing Moonwave comments, opt to always use `@param`, `@class`, and `
     Module:DoThing(5)
     ``
 
-    @param Foo number -- The parameter that does thing
+    @param foo number -- The parameter that does thing
 ]=]
 
-function Module:DoThing(Foo : number)
+function Module:DoThing(foo : number)
     --...
 end
 ```
