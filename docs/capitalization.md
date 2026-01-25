@@ -19,6 +19,26 @@ local MyVariable = 10 -- Not constant
 MyVariable = 20
 ```
 
+## Arguments and parameters
+Arguments and parameters should be in *camel case*. Below are two examples of this.
+
+Example in `for` loop:
+
+```lua
+for index : number, value : any in MyTable do
+    local ExampleVariable = value
+    --...
+end
+```
+
+Example in function:
+
+```lua
+local function MyFunction(firstArgument : number, secondArgument : string)
+    local ExampleVariable = secondArgument
+end
+```
+
 ## OOP class-wide functions
 When programming in OOP format, all OOP methods (e.g. `object:Destroy()`) are named in *pascal case*. However, OOP class functions, such as constructors (e.g. `object.new()`), are always done in *camel case*.
 

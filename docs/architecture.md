@@ -5,25 +5,38 @@ All script, asset, config, and other file names are in *pacal case* (`PascalCase
 
 ## File Structure
 Here is the recommended file structure:
-* `ReplicatedFirst`
-    * `./Client`
-    * `./ClientModules`
-* `ServerScriptService`
-    * `./Server`
-    * `./ServerModules`
-* `ReplicatedStorage`
-    * `./Common`
-        * `./Packages`
-    * `./SharedAssets`
-    * `./Remotes`
-* `ServerStorage`
-    * `./ServerAssets`
 
-Code that is specifically for the client will go under `Client` (for scripts) or `ClientModules` (for modules). Code that is only for the server will go under `Server` (for scripts) or `ServerModules` (for modules). Anything that is shared code will go in `Common`. `Packages` are for modules imported by a package manager, such as Wally.
+```
+.
+└── Project/
+    ├── ReplicatedFirst/
+    │   ├── Scripts
+    │   └── Modules
+    ├── ServerScriptService/
+    │   ├── Scripts
+    │   ├── Modules
+    │   └── Data
+    ├── ReplicatedStorage/
+    │   ├── Modules/
+    │   │   └── Packages
+    │   ├── Data
+    │   ├── Assets
+    │   └── Remotes
+    └── ServerStorage/
+        └── Assets
+```
 
-`SharedAssets` is for any asset that can be used by either the client or server. `ServerAssets` is for assets that are server-only. Do not ever put instances inside of code.
+### `ReplicatedFirst`
+Any local scripts should go under `Scripts`, and any client-specific modules should go under `Modules`. An example of a client-specific module would be an interface component.
 
-`Remotes` is a folder of remote events/functions for the game. They do not go anywhere else.
+### `ServerScriptService`
+Any server scripts should go under `Scripts`, and any server-specific modules should go under `Modules`. An example of a server-specific module would be a datastore wrapper.
+
+### `ReplicatedStorage`
+Store any common/shared modules in `Modules` (for example, utility modules). `Packages` is a folder of packages imported by a package manager, such as Wally (and belongs under `Modules`). `Data` is used to store modules or other data that is constant (for example, game config). `Assets` is used to store non-code instances that is used by client or server. `Remotes` is exclusively for remote events and remote functions.
+
+### `ServerStorage`
+Store any server-specific assets in `Assets`. For example, you would store maps here.
 
 ## Modularization
 Modularization is important to make sure that functionality is divided into isolated scopes, either through functions or modules.
